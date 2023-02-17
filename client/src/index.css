@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary {
+  background: "#ffb703";
+}
+
+.second {
+  background: "#023047";
+}
+
+.third {
+  background: "#17Afbo";
+}
