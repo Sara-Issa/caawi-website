@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 function Nav() {
   return (
     <>
+    
       {/* <!-- nav component --> */}
       <div class="w-full mx-auto">
         <nav class="border-gray-200 px-2 mb-10">
