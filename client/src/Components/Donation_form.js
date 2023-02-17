@@ -24,7 +24,7 @@ function Donation_form() {
                             </svg>
                         </div>
                         <h1 className="text-gray-800 font-lg font-bold tracking-normal leading-tight mb-4">Create Donation</h1>
-                        <form>
+                        <form >
                         <label htmlFor="name" className="text-gray-800 text-sm font-bold leading-tight tracking-normal">
                            Name
                         </label>
