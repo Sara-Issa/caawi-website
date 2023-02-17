@@ -14,13 +14,22 @@ function Navbar() {
           </div>
           <div className="flex items-center text-lg  text-gray-500">
             <ul className="flex justify-around">
+              <Link to="/">
               <li className="mr-5 border-b-2 border-teal-400 w-14">Home</li>
+
+              </Link>
+              <Link to="/volunteer">
               <li className="mr-5">Volunteer</li>
+              </Link>
               <li className="mr-5">Article</li>
             </ul>
+           
+            <Link to="/Donate">
             <button className="bg-yellow-400 text-white font-semibold px-4 py-2 rounded-lg  ">
               Donate
             </button>
+            </Link>
+
           </div>
         </div>
       </div>
