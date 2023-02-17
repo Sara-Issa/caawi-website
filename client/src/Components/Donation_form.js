@@ -29,8 +29,13 @@ function Donation_form() {
                     <div className="relative py-8 px-5 md:px-10 bg-white shadow-md rounded border border-gray-400">
                     
                         <h1 className="text-gray-800 font-lg font-bold tracking-normal leading-tight mb-4">Create Donation</h1>
+<<<<<<< HEAD
                         <form>
                         <label  className="text-gray-800 text-sm font-bold leading-tight tracking-normal">
+=======
+                        <form >
+                        <label htmlFor="name" className="text-gray-800 text-sm font-bold leading-tight tracking-normal">
+>>>>>>> fd937bf2fa278678770025d06f6bf4fda992d64b
                            Name
                         </label>
                         <input 
