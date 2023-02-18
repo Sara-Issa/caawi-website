@@ -15,7 +15,7 @@ function Navbar() {
           <div className="flex items-center text-lg  text-gray-500">
             <ul className="flex justify-around ">
               <li
-                className={`mr-5  w-14 ${
+                className={`mr-5  w-full ${
                   activePage === "home" ? " border-teal-400 border-b-2" : " "
                 }`}
                 onClick={() => setActivePage("home")}
@@ -23,7 +23,16 @@ function Navbar() {
                 Home
               </li>
               <li
-                className={`mr-5  w-14 ${
+                className={`mr-5  w-full ${
+                  activePage === "about" ? " border-teal-400 border-b-2" : " "
+                }`}
+                onClick={() => setActivePage("about")}
+              >
+                About
+              </li>
+
+              <li
+                className={`  w-full ${
                   activePage === "volunter"
                     ? " border-teal-400 border-b-2"
                     : " "
@@ -33,7 +42,17 @@ function Navbar() {
                 Volunteer
               </li>
               <li
-                className={`ml-7 mr-5  w-14 ${
+                className={`mr-3 ml-5 w-full ${
+                  activePage === "gethired"
+                    ? " border-teal-400 border-b-2"
+                    : " "
+                }`}
+                onClick={() => setActivePage("gethired")}
+              >
+                GetHired
+              </li>
+              <li
+                className={`mr-8 w-full ${
                   activePage === "article"
                     ? " border-teal-400 border-b-2 "
                     : " "
@@ -43,18 +62,21 @@ function Navbar() {
                 Article
               </li>
             </ul>
-            <button className="bg-yellow-400 text-white font-semibold px-4 py-2 rounded-lg  ">
-              Donate
-            </button>
+
+            <Link to="/Donate">
+              <button className="bg-yellow-400 text-white font-semibold px-4 py-2 rounded-lg  ">
+                Donate
+              </button>
+            </Link>
           </div>
         </div>
       </div>
       {/* mobile and tablet */}
 
-      <div className="md:block hidden  w-full py-3 ">
+      <div className="md:block hidden  w-full py-3  px-5">
         <div className=" flex items-center justify-between">
           <div className="mr-20">
-            <img src="/logo1.png" className="w-44  h-5  " />
+            <img src="/logo4.png" className="w-44  h-auto  " />
           </div>
           <div
             className="  w-full  flex justify-end  z-30 h-10    "

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function GetHiredDetail() {
   return (
@@ -20,9 +21,11 @@ function GetHiredDetail() {
           campaigns, and disaster relief efforts.
         </p>
         {/* <div className="border-b-2 border-teal-500 mt-5" /> */}
-        <div className="px-5 py-2 border w-1/4 sm:w-1/2 md:w-full right-0 bg-yellow-300 mt-10 font-bold text-white">
-          Get Hired
-        </div>
+        <Link to="/get_hired">
+          <div className="px-5 py-2 border w-1/4 right-0 bg-yellow-300 mt-10 font-bold text-white">
+            Get Hired
+          </div>
+        </Link>
       </div>
       <div className="block sm:hidden">
         <img src="/gethired.png" />

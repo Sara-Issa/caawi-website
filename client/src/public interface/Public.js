@@ -9,7 +9,13 @@ import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import DonateList from "./DonateList";
-import VolunterDetail from "./VolunterDetail";
+
+import Volenter from "./Volenter";
+import PrivacyPolicy from "./PrivacyPolicy";
+import Jobs from "./jobs";
+import Terms from "./Terms";
+import ArticleList from "./ArticleList";
+import ArticleDetail from "./ArticleDetail";
 
 function Public() {
   return (
@@ -20,14 +26,19 @@ function Public() {
           <Route path="/" element={<Home />} />
           <Route path="/Donate" element={<Donate />} />
           <Route path="/Article" element={<Article />} />
+          <Route path="/Article/List" element={<ArticleList />} />
+          <Route path="/Article/List/Detail" element={<ArticleDetail />} />
+
           <Route path="/Volunteer" element={<Volunteer />} />
-          <Route path="/Volunteer/Detail" element={<VolunterDetail />} />
 
           <Route path="/Donate" element={<Donate />} />
           <Route path="/Donate/list" element={<DonateList />} />
 
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Volunt" element={<Volenter />} />
+          <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+          <Route path="/get_hired" element={<Jobs />} />
         </Routes>
       </div>
       <Footer />

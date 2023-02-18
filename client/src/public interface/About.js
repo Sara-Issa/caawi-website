@@ -21,7 +21,7 @@ function About() {
       </div>
       <div className="ml-20 sm:ml-0 sm:mt-7">
         <img src="about.png" className="w-full h-[32rem] sm:h-80" />
-      </div>
+      </div>  
     </div>
   );
 }
