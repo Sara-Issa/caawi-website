@@ -14,53 +14,68 @@ function Navbar() {
           </div>
           <div className="flex items-center text-lg  text-gray-500">
             <ul className="flex justify-around ">
-              <li
-                className={`mr-5  w-full ${
-                  activePage === "home" ? " border-teal-400 border-b-2" : " "
-                }`}
-                onClick={() => setActivePage("home")}
-              >
-                Home
-              </li>
-              <li
-                className={`mr-5  w-full ${
-                  activePage === "about" ? " border-teal-400 border-b-2" : " "
-                }`}
-                onClick={() => setActivePage("about")}
-              >
-                About
-              </li>
+              <Link to="/">
+                {" "}
+                <li
+                  className={`mr-5  w-full ${
+                    activePage === "home" ? " border-teal-400 border-b-2" : " "
+                  }`}
+                  onClick={() => setActivePage("home")}
+                >
+                  Home
+                </li>
+              </Link>
+              <Link to="/">
+                {" "}
+                <li
+                  className={`mr-5  w-full ${
+                    activePage === "about" ? " border-teal-400 border-b-2" : " "
+                  }`}
+                  onClick={() => setActivePage("about")}
+                >
+                  About
+                </li>
+              </Link>
 
-              <li
-                className={`  w-full ${
-                  activePage === "volunter"
-                    ? " border-teal-400 border-b-2"
-                    : " "
-                }`}
-                onClick={() => setActivePage("volunter")}
-              >
-                Volunteer
-              </li>
-              <li
-                className={`mr-3 ml-5 w-full ${
-                  activePage === "gethired"
-                    ? " border-teal-400 border-b-2"
-                    : " "
-                }`}
-                onClick={() => setActivePage("gethired")}
-              >
-                GetHired
-              </li>
-              <li
-                className={`mr-8 w-full ${
-                  activePage === "article"
-                    ? " border-teal-400 border-b-2 "
-                    : " "
-                }`}
-                onClick={() => setActivePage("article")}
-              >
-                Article
-              </li>
+              <Link to="/">
+                {" "}
+                <li
+                  className={`  w-full ${
+                    activePage === "volunter"
+                      ? " border-teal-400 border-b-2"
+                      : " "
+                  }`}
+                  onClick={() => setActivePage("volunter")}
+                >
+                  Volunteer
+                </li>
+              </Link>
+              <Link to="/">
+                {" "}
+                <li
+                  className={`mr-3 ml-5 w-full ${
+                    activePage === "gethired"
+                      ? " border-teal-400 border-b-2"
+                      : " "
+                  }`}
+                  onClick={() => setActivePage("gethired")}
+                >
+                  GetHired
+                </li>
+              </Link>
+              <Link to="/">
+                {" "}
+                <li
+                  className={`mr-8 w-full ${
+                    activePage === "article"
+                      ? " border-teal-400 border-b-2 "
+                      : " "
+                  }`}
+                  onClick={() => setActivePage("article")}
+                >
+                  Article
+                </li>
+              </Link>
             </ul>
 
             <Link to="/Donate">
