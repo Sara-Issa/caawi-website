@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <footer class="p-4 bg-teal-50 rounded-lg shadow-xl md:px-6 md:py-8 dark:bg-gray-900 px-28 mt-5">
+      <div class="p-4 bg-teal-50 rounded-lg shadow-xl md:px-6 md:py-8 dark:bg-gray-900 px-28 mt-5">
         <div class="flex items-center justify-between sm:flex-wrap sm:justify-center">
           <div>
             <a href="/" class="flex items-center mb-4 sm:mb-0">
@@ -48,7 +48,7 @@ function Footer() {
           </a>
           . All Rights Reserved.
         </span>
-      </footer>
+      </div>
     </div>
   );
 }

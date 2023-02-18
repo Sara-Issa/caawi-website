@@ -8,6 +8,8 @@ import Article from "./Article";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import DonateList from "./DonateList";
+import VolunterDetail from "./VolunterDetail";
 
 function Public() {
   return (
@@ -19,7 +21,11 @@ function Public() {
           <Route path="/Donate" element={<Donate />} />
           <Route path="/Article" element={<Article />} />
           <Route path="/Volunteer" element={<Volunteer />} />
+          <Route path="/Volunteer/Detail" element={<VolunterDetail />} />
+
           <Route path="/Donate" element={<Donate />} />
+          <Route path="/Donate/list" element={<DonateList />} />
+
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
         </Routes>

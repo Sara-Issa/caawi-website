@@ -6,17 +6,42 @@ function Navbar() {
   const [activePage, setActivePage] = useState("home");
   return (
     <>
-      <div className="block md:hidden py-4 px-28  ">
+      <div className="block md:hidden py-4 px-28 shadow  ">
         {/* desktop */}
         <div className="  flex justify-between ">
           <div>
             <img src="/logo4.png" className="w-32  h-auto " />
           </div>
           <div className="flex items-center text-lg  text-gray-500">
-            <ul className="flex justify-around">
-              <li className="mr-5 border-b-2 border-teal-400 w-14">Home</li>
-              <li className="mr-5">Volunteer</li>
-              <li className="mr-5">Article</li>
+            <ul className="flex justify-around ">
+              <li
+                className={`mr-5  w-14 ${
+                  activePage === "home" ? " border-teal-400 border-b-2" : " "
+                }`}
+                onClick={() => setActivePage("home")}
+              >
+                Home
+              </li>
+              <li
+                className={`mr-5  w-14 ${
+                  activePage === "volunter"
+                    ? " border-teal-400 border-b-2"
+                    : " "
+                }`}
+                onClick={() => setActivePage("volunter")}
+              >
+                Volunteer
+              </li>
+              <li
+                className={`ml-7 mr-5  w-14 ${
+                  activePage === "article"
+                    ? " border-teal-400 border-b-2 "
+                    : " "
+                }`}
+                onClick={() => setActivePage("article")}
+              >
+                Article
+              </li>
             </ul>
             <button className="bg-yellow-400 text-white font-semibold px-4 py-2 rounded-lg  ">
               Donate
